@@ -2,12 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Linefont:wght@4..1000&family=Oswald:wght@200..700&display=swap');
     
 
+/* css variables */
+:root {
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620; /* dark brown */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
+}
+
+
+/* global style */
 body {
-    color: red;
-    font-family: "Inter", sans-serif;
-
+    font-family: var(--primary-font);
 }
 
-h1 {
-    font-family: "Macondo", cursive;
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
 }
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
